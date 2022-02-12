@@ -487,11 +487,9 @@ header .navbar {
 }
 
 .product-item .down-content h6 {
-	position: absolute;
-	top: 30px;
-	right: 30px;
 	font-size: 18px;
 	color: #121212;
+	margin-top: 20px;
 }
 
 .product-item .down-content p {
