@@ -9,9 +9,14 @@ div.lists
 }
 h3#title1
 {
-	font-size: 65;
-	margin-bottom:25px;
+	font-size: 55;
+}
 
+h3#price
+{
+	margin-bottom:25px;
+	font-size:30; 
+	color:#048200;
 }
 
 img#logo
@@ -28,6 +33,11 @@ h2#p1
 li#li1
 {
 	font-size: 20px;
+}
+
+button#buy
+{
+	color:#048200;
 }
 
 body {
@@ -87,7 +97,7 @@ ul.social-icons li a:hover {
 a.filled-button {
 	background-color: #048200;
 	color: #fff;
-	font-size: 14px;
+	font-size: 25px;
 	text-transform: capitalize;
 	font-weight: 300;
 	padding: 10px 20px;

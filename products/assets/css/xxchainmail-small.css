@@ -5,7 +5,13 @@ p#copyright
 
 h3#title1
 {
-	font-size: 30;
+	font-size: 40;
+}
+h3#price
+{
+	margin-bottom:5px;
+	font-size:25; 
+	color:#048200;
 	padding-bottom: 15px;
 }
 h1#h1
