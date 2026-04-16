@@ -122,6 +122,48 @@ jQuery( document ).ready(function( $ ) {
                 }
             });
         }
+        if ($('.owl-new-arrivals').length) {
+            // Ensure no double initialization
+            if ($('.owl-new-arrivals').hasClass('owl-loaded')) {
+                $('.owl-new-arrivals').trigger('destroy.owl.carousel');
+            }
+            $('.owl-new-arrivals').owlCarousel({
+                loop: true,
+                nav: true,
+                navText: ['‹','›'],
+                dots: true,
+                items: 3,
+                margin: 30,
+                stagePadding: 0,
+                center: false,
+                autoWidth: false,
+                autoplay: false,
+                smartSpeed: 700,
+                autoplayTimeout: 6000,
+                responsive: {
+                    0: {
+                        items: 1,
+                        margin: 0
+                    },
+                    460: {
+                        items: 1,
+                        margin: 0
+                    },
+                    576: {
+                        items: 2,
+                        margin: 20
+                    },
+                    992: {
+                        items: 3,
+                        margin: 30
+                    }
+                }
+            });
+            // force a refresh after all assets load so Owl computes correct widths
+            $(window).on('load', function(){
+                $('.owl-new-arrivals').trigger('refresh.owl.carousel');
+            });
+        }
 
         $(".Modern-Slider").slick({
             autoplay:true,

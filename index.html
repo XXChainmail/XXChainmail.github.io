@@ -16,7 +16,21 @@
             <link rel="stylesheet" media="screen and (min-width: 800px)" href="assets/css/xxchainmail-large.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-
+<style>
+      /* Minimal positioning for Owl nav arrows (do not change item sizes) */
+      .owl-new-arrivals.owl-carousel{position:relative}
+      .owl-new-arrivals.owl-carousel .owl-nav{position:absolute;top:50%;left:0;right:0;margin:0;pointer-events:none}
+      .owl-new-arrivals.owl-carousel .owl-nav button{pointer-events:auto;position:absolute;top:50%;transform:translateY(-50%);background:#20003b;border:2px solid #048200;width:44px;height:44px;border-radius:50%;font-size:24px;line-height:0.5; color:#048200}
+      .owl-new-arrivals.owl-carousel .owl-nav .owl-prev{left:-56px}
+      .owl-new-arrivals.owl-carousel .owl-nav .owl-next{right:-56px}
+      @media (max-width:768px){.owl-new-arrivals.owl-carousel .owl-nav .owl-prev{left:-40px}.owl-new-arrivals.owl-carousel .owl-nav .owl-next{right:-40px}}
+      /* External controls (do not change sizes or carousel options) */
+      .external-controls-wrapper{position:relative}
+      .external-arrivals-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:1200;background:#20003b;border:2px solid #048200;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer; color:#048200}
+      .external-arrivals-btn.prev{left:-64px}
+      .external-arrivals-btn.next{right:-64px}
+      @media (max-width:768px){.external-arrivals-btn.prev{left:-44px}.external-arrivals-btn.next{right:-44px}}
+    </style>
   </head>
 
   <body>
@@ -49,10 +63,10 @@
                 </a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="products.html">My Products</a>
+                <a class="nav-link" href="contact.html">Contact Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Me</a>
+                <a class="nav-link" href="products.html">Shop</a>
               </li>
             </ul>
           </div>
@@ -74,8 +88,28 @@
         </div>
       </div>
     </div>
-    <!-- Banner Ends Here -->
 
+    
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <div class="row">
+                <div class="col-md-8">
+                  <h1 id="h1">Shop XX Chainmail Products</h1>
+                </div>
+                <div class="col-md-4">
+                  <a href="products.html" class="filled-button">Purchase Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends Here -->
+<!--
     <div class="latest-products">
       <div class="container">
         <div class="row">
@@ -87,18 +121,8 @@
               </center>
 			</div>
           </div>
-          <!--
-		  <div class="col-md-4">
-            <div class="product-item">
-              <a href="products/medium_dice_bag.html"><img src="assets/images/product_02.jpg" alt=""></a>
-              <div class="down-content">
-                <a href="products/medium_dice_bag.html"><h4>Medium Dice Bag</h4>
-                </a>
-                <h6>$35.00</h6>
-              </div>
-            </div>
-          </div>
-		  --->
+
+      
           <div class="col-md-4">
             <div class="product-item">
               <a href="products/dragonfly.html"><img src="assets/images/dragonfly.png" alt=""></a>
@@ -132,13 +156,25 @@
         </div>
       </div>
     </div>
+  -->
+
+
+    <div style="margin-top: 20px; height:10px; background-color: black;"></div>
+    
+    <div class="section-heading">
+            <div align="center" class="text-content">
+              <h3 align="center">About Xander Xavier Chainmail </h3>
+            </div>
+    </div>
+    <div style="margin-top: -21px; height:10px; background-color: black; margin-bottom:9px"></div>
+
+
 
     <div class="best-features">
       <div class="container">
         <div>
           <div>
             <div class="section-heading">
-              <h2 align="center">About Xander Xavier Chainmail </h2>
 			  <center>
 				<img src="assets/images/XXChainmailSquareWithBackground.png" width="240" height="" alt="XXChainmailWide.png">
 			  </center>
@@ -162,24 +198,6 @@
       </div>
 
 
-    <div class="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="inner-content">
-              <div class="row">
-                <div class="col-md-8">
-                  <h1 id="h1">Shop XX Chainmail Products</h1>
-                </div>
-                <div class="col-md-4">
-                  <a href="https://xander-xavier-chainmail.square.site/" class="filled-button">Purchase Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     
     <footer>

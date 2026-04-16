@@ -1,3 +1,16 @@
+.iframe{
+	overflow:hidden;
+	border:10px solid #048200;
+	height:1100px;
+}
+.section-heading .text-content h3 {
+	color: #048200;
+	font-size: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	background-color: #20003b;
+}
 h3#title1
 {
 	font-size: 45;
@@ -108,11 +121,11 @@ a.filled-button:hover {
 }
 
 .products-heading {
-	padding: 200px 0px 150px 0px;
+	padding: 150px 0px 75px 0px;
 	background-image: url(../images/scales.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center -15px;
+	background-position: center -;
 }
 
 .about-heading {
@@ -680,8 +693,14 @@ footer .inner-content p a {
 
 /* Product Page */
 
-.products {
-	margin-top: 100px;
+
+.products .text-content h3 {
+	color: #048200;
+	font-size: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	background-color: #20003b;
 }
 
 .products .filters {
