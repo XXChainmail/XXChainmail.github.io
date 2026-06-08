@@ -14,6 +14,7 @@
 
     
     <!-- Bootstrap core CSS -->
+	
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	  <link rel="stylesheet" 
               media="screen and (max-width: 625px)" 
@@ -26,6 +27,21 @@
               href="assets/css/xxchainmail-large.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/owl.css">
+    <style>
+      /* Minimal positioning for Owl nav arrows (do not change item sizes) */
+      .owl-new-arrivals.owl-carousel{position:relative}
+      .owl-new-arrivals.owl-carousel .owl-nav{position:absolute;top:50%;left:0;right:0;margin:0;pointer-events:none}
+      .owl-new-arrivals.owl-carousel .owl-nav button{pointer-events:auto;position:absolute;top:50%;transform:translateY(-50%);background:#20003b;border:2px solid #048200;width:44px;height:44px;border-radius:50%;font-size:24px;line-height:0.5; color:#048200}
+      .owl-new-arrivals.owl-carousel .owl-nav .owl-prev{left:-56px}
+      .owl-new-arrivals.owl-carousel .owl-nav .owl-next{right:-56px}
+      @media (max-width:768px){.owl-new-arrivals.owl-carousel .owl-nav .owl-prev{left:-40px}.owl-new-arrivals.owl-carousel .owl-nav .owl-next{right:-40px}}
+      /* External controls (do not change sizes or carousel options) */
+      .external-controls-wrapper{position:relative}
+      .external-arrivals-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:1200;background:#20003b;border:2px solid #048200;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer; color:#048200}
+      .external-arrivals-btn.prev{left:-64px}
+      .external-arrivals-btn.next{right:-64px}
+      @media (max-width:768px){.external-arrivals-btn.prev{left:-44px}.external-arrivals-btn.next{right:-44px}}
+    </style>
 
   </head>
 
@@ -56,12 +72,21 @@
                 <a class="nav-link" href="index.html">Home
                   <span class="sr-only">(current)</span>
                 </a>
-              </li> 
-              <li class="nav-item active">
-                <a class="nav-link" href="products.html">My Products</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li> 
+              <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="chainbuilder.html">Chain Builder</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="products.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#shop" onclick="goToCart()">Cart</a>
               </li>
             </ul>
           </div>
@@ -75,7 +100,6 @@
         <div class="row">
           <div class="col-md-12">
             <div align="center" class="text-content">
-              <h4>new arrivals</h4>
               <h2>chainmail products</h2>
             </div>
           </div>
@@ -83,9 +107,16 @@
       </div>
     </div>
 
+    <div style="height:10px; background-color: black;"></div>
     
     <div class="products">
-      <div class="container">
+            <div align="center" class="text-content">
+              <h3>new arrivals</h3>
+            </div>
+    </div>
+    <div style="height:10px; background-color: black; margin-bottom:9px"></div>
+    <div class="products" style="margin-bottom: -100px;">  
+    <div class="container">
         <div class="row">
           <div class="col-md-12">
             </div>
@@ -107,36 +138,75 @@
             </div>
           </div>
 		  --->
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="products/dragonfly.html"><img src="assets/images/dragonfly.png" alt=""></a>
-              <div class="down-content">
-                <a href="products/dragonfly.html"><h4>Dragonfly&nbsp;</h4>
-                </a>
-                <h6>$74.50</h6>
+
+      <!--New Arrivals Carousel start-->
+          <div class="owl-new-arrivals owl-carousel owl-theme">
+            <div class="item">
+              <div class="product-item">
+                <a href="#shop" onclick="goToCross()"><img src="assets/images/necklace-cross.png" alt=""></a>
+                <div class="down-content">
+                  <a href="#shop" onclick="goToCross()"><h4>Celtic Cross&nbsp;</h4></a>
+                  <h6>$26.80</h6>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-item">
+                <a href="#shop" onclick="goToScaleEarrings()"><img src="assets/images/earrings-usa.png" alt=""></a>
+                <div class="down-content">
+                  <a href="#shop" onclick="goToScaleEarrings()"><h4>Scale Earrings&nbsp;</h4></a>
+                  <h6>$17.60</h6>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-item">
+                <a href="#shop" onclick="goToBells()"><img src="assets/images/earrings-bells.png" alt=""></a>
+                <div class="down-content">
+                  <a href="#shop" onclick="goToBells()"><h4>Shaggy Bell Earrings&nbsp;</h4></a>
+                  <h6>$21.50</h6>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-item">
+                <a href="#shop" onclick="goToBells()"><img src="assets/images/earrings-tree.png" alt=""></a>
+                <div class="down-content">
+                  <a href="#shop" onclick="goToBells()"><h4>Shaggy Tree Earrings&nbsp;</h4></a>
+                  <h6>$48.00</h6>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-item">
+                <a href="#shop" onclick="goToDragonfly()"><img src="assets/images/dragonfly.png" alt=""></a>
+                <div class="down-content">
+                  <a href="#shop" onclick="goToDragonfly()"><h4>Dragonfly&nbsp;</h4></a>
+                  <h6>$74.50</h6>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-item">
+                <a href="#shop" onclick="goToButterfly()"><img src="assets/images/butterfly.png" alt=""></a>
+                <div class="down-content">
+                  <a href="#shop" onclick="goToButterfly()"><h4>Butterfly&nbsp;</h4></a>
+                  <h6>$21.50</h6>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="product-item">
+                <a href="#shop" onclick="goToStar()"><img src="assets/images/byzantine_star.png" alt=""></a>
+                <div class="down-content">
+                  <a href="#shop" onclick="goToStar()"><h4>Byzantine Star</h4></a>
+                  <h6>$16.20</h6>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="products/butterfly.html"><img src="assets/images/butterfly.png" alt=""></a>
-              <div class="down-content">
-                <a href="products/butterfly.html"><h4>Butterfly&nbsp;</h4>
-                </a>
-                <h6>$21.50</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="products/byzantine_star.html"><img src="assets/images/byzantine_star.png" alt=""></a>
-              <div class="down-content">
-                <a href="products/byzantine_star.html"><h4>Byzantine Star</h4>
-                </a>
-                <h6>$16.20</h6>
-              </div>
-            </div>
-          </div>
+
+        <!--New Arrivals Carousel end-->
         </div>
       </div>
     </div>
@@ -144,6 +214,20 @@
           </div>
         </div>
       </div>
+      <div id="shop" style="height:150px; margin-bottom: -70px;"></div>
+
+    <div id="shop_div" style="height:10px; background-color: black;"></div>
+    
+    <div class="products">
+            <div align="center" class="text-content">
+              <h3 onclick="goToShop()">Shop</h3>
+            </div>
+    </div>
+    <div style="height:10px; background-color: black;"></div>
+
+        <div class="iframe">
+                <iframe id="iframeID" name="shop" src="https://xander-xavier-chainmail.square.site" width="100%" height="2000" style="border:none"></iframe>
+        </div>
 
     
     <footer>
@@ -151,13 +235,66 @@
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">              
-				<p>Copyright &copy; 2022&nbsp; XXChainmaiL&nbsp; &nbsp;</p>
+              <p id="copyright">Made by Allan Tech Services&nbsp; | &nbsp;Updated 2026</p>
 
             </div>
           </div>
         </div>
       </div>
     </footer>
+
+
+
+    <script>
+      var iframe = document.getElementById("iframeID");
+      var div = document.getElementById("shop");
+      function goToShopItem(){
+        iframe.style.cssText = "";
+        div.scrollIntoView({behavior: 'smooth'});
+        document.getElementsByClassName("iframe")[0].style.overflow = "hidden";
+      }
+      function goToDragonfly(){
+        iframe.src = "https://xander-xavier-chainmail.square.site/product/butterfly/2";
+        goToShopItem();
+        
+      }
+      function goToButterfly(){
+        iframe.src = "https://xander-xavier-chainmail.square.site/product/butterfly/3";
+        goToShopItem();
+      }
+      function goToStar(){
+        iframe.src = "https://xander-xavier-chainmail.square.site/product/butterfly/1";
+        goToShopItem();
+      }
+      function goToScaleEarrings(){
+        iframe.src = "https://xander-xavier-chainmail.square.site/product/small-etched-scale-earrings-pair-/K2K2AZFW2JQ4P27OKEIDSRZF";
+        goToShopItem();
+      }
+      function goToBells(){
+        iframe.src = "https://xander-xavier-chainmail.square.site/product/shaggy-bell-earrings-pair-/KORABCYGWJOY7NQVNVSFIU5F";
+        goToShopItem();
+      }
+      function goToTree(){
+        iframe.src = "https://xander-xavier-chainmail.square.site/product/shaggy-tree-earrings/OR2TTHEQ5C34KYC5MWLSRPTC";
+        goToShopItem();
+      }
+      function goToCross(){
+        iframe.src = "https://xander-xavier-chainmail.square.site/product/celtic-cross-necklace/MH5V3KWXHDTUANS2N2ATNWTQ";
+        goToShopItem();
+      }
+      function goToShop(){
+        iframe.src = "https://xander-xavier-chainmail.square.site";
+        goToShopItem();
+      }
+      function goToCart(){
+        iframe.src = "https://xander-xavier-chainmail.square.site/s/cart";
+        goToShopItem();
+        document.getElementsByClassName("iframe")[0].style.overflow = "scroll";
+        iframe.style.marginTop = "-75px";
+      }
+
+    </script>
+
 
 
     <!-- Bootstrap core JavaScript -->
