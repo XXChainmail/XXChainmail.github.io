@@ -319,7 +319,7 @@
 
 !function() {
   var data = [
-    { eventName: 'Greenville Heritage Days', date: '2026-07-11', location: 'Riverside Park; Greenville PA', time: '12:00 PM', specialDetails: 'Come visit my booth! I will have some pre-made items available for sale, along with taking custom orders.', pageId: '/events/heritage-days.html' }
+    { eventName: 'Greenville Heritage Days', date: '2026-07-11', location: 'Riverside Park; Greenville PA', time: '11:00 AM - 8:00 PM', specialDetails: 'Come visit my booth! I will have some pre-made items available for sale, along with taking custom orders.', pageId: '/events/heritage-days.html' }
   ];
   
   // Make events globally accessible for event.html
