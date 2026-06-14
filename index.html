@@ -32,7 +32,30 @@
       .external-arrivals-btn.prev{left:-64px}
       .external-arrivals-btn.next{right:-64px}
       @media (max-width:768px){.external-arrivals-btn.prev{left:-44px}.external-arrivals-btn.next{right:-44px}}</style>
-  </head>
+  
+      <script>
+  (function() {
+    // Check if the current URL contains "index.html"
+    if (window.location.href.indexOf("index.html") > -1) {
+      // Replace the current history state with the clean version
+      // This changes the URL bar without reloading the page or breaking the path
+      window.history.replaceState(null, null, window.location.href.replace("index.html", ""));
+    }
+  })();
+</script>
+
+<script>
+  (function() {
+    // Check if the current URL contains "index.html"
+    if (window.location.href.indexOf("index") > -1) {
+      // Replace the current history state with the clean version
+      // This changes the URL bar without reloading the page or breaking the path
+      window.history.replaceState(null, null, window.location.href.replace("index.html", ""));
+    }
+  })();
+</script>
+
+</head>
 
   <body>
 
