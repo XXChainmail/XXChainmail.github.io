@@ -145,7 +145,28 @@
       </div>
     </div>
   -->
-    <iframe src="/apps/chainbuilder.html" title="Chain Builder" style="width:100%; height:800px; border:none;"></iframe>
+    <iframe id="chainbuilder-app" src="/apps/chainbuilder.html" title="Chain Builder" style="width:100%; height:800px; border:none;"></iframe>
+    <script>
+      (function() {
+        var iframe = document.getElementById('chainbuilder-app');
+        if (iframe) {
+          iframe.src = '/apps/chainbuilder.html' + window.location.search;
+        }
+
+        window.addEventListener('message', function(event) {
+          if (!iframe || event.source !== iframe.contentWindow) return;
+          if (!event.data || event.data.type !== 'chainbuilder-url') return;
+          if (event.origin !== window.location.origin) return;
+
+          var newSearch = event.data.search || '';
+          var currentUrl = new URL(window.location.href);
+          if (currentUrl.search !== newSearch) {
+            currentUrl.search = newSearch;
+            window.history.replaceState(null, '', currentUrl.pathname + currentUrl.search);
+          }
+        });
+      })();
+    </script>
 
 
 
